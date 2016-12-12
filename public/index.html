@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign In</title>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+<!--Google Fonts-->
+</head>
+<body>
+<div class="login">
+	<h2>Seizure Prediction</h2>
+	<div class="login-top">
+		<h1>LOGIN FORM</h1>
+		<form id="login_form" action="" method="post" novalidate="1" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)">
+			<input id="User Id" type="text" value="User Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User Id';}">
+			<input id="Password" type="password" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}">
+	    </form>
+	    <div class="forgot">
+	    	<a href="#">forgot Password</a>
+	    	<input id="login" type = "submit" value="Login" >
+	    </div>
+	</div>
+	<div class="login-bottom">
+		<h3>New User &nbsp;<a id="register" href="signup.html">Register</a>&nbsp Here</h3>
+	</div>
+</div>	
+<div class="copyright">
+	<p></p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCbyy1oWJk2U81daXdyuLhuaZOx4j1OY1w",
+    authDomain: "seizureprediciton.firebaseapp.com",
+    databaseURL: "https://seizureprediciton.firebaseio.com",
+    storageBucket: "seizureprediciton.appspot.com",
+    messagingSenderId: "1000511212889"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/signin.js"></script>
+
+</body>
+</html>
