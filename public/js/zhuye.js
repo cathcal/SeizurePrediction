@@ -10,7 +10,7 @@ FriendlyChat.prototype.initFirebase = function() {
   this.auth = firebase.auth();
   this.database = firebase.database();
   this.storage = firebase.storage();
-  //this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
+  this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
 };
 
 // Loads chat messages history and listens for upcoming ones.
@@ -63,59 +63,7 @@ FriendlyChat.prototype.setImageUrl = function(imageUri, imgElement) {
   }
 };
 
-// Saves a new message containing an image URI in Firebase.
-// This first saves the image in Firebase storage.
-FriendlyChat.prototype.saveImageMessage = function(event) {
-  var file = event.target.files[0];
 
-  // Clear the selection in the file picker input.
-  this.imageForm.reset();
-
-  // Check if the file is an image.
-  if (!file.type.match('image.*')) {
-    var data = {
-      message: 'You can only share images',
-      timeout: 2000
-    };
-    this.signInSnackbar.MaterialSnackbar.showSnackbar(data);
-    return;
-  }
-  if (this.checkSignedInWithMessage()) {
-
-    // We add a message with a loading icon that will get updated with the shared image.
-    var currentUser = this.auth.currentUser;
-    this.messagesRef.push({
-      name: currentUser.displayName,
-      imageUrl: FriendlyChat.LOADING_IMAGE_URL,
-      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
-    }).then(function(data) {
-
-      // Upload the image to Firebase Storage.
-      this.storage.ref(currentUser.uid + '/' + Date.now() + '/' + file.name)
-          .put(file, {contentType: file.type})
-          .then(function(snapshot) {
-            // Get the file's Storage URI and update the chat message placeholder.
-            var filePath = snapshot.metadata.fullPath;
-            data.update({imageUrl: this.storage.ref(filePath).toString()});
-          }.bind(this)).catch(function(error) {
-        console.error('There was an error uploading a file to Firebase Storage:', error);
-      });
-    }.bind(this));
-  }
-};
-
-FriendlyChat.prototype.signUp = function() {
-  this.auth.createUserWithEmailAndPassword(this.email.value, this.password.value).catch(function(error) {
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  if (errorCode == 'auth/weak-password') {
-    alert('The password is too weak.');
-  }
-  console.log(error);
-});
-document.form.action = "index.html";
-document.form.submit();
-};
 
 // Signs-out of Friendly Chat.
 FriendlyChat.prototype.signOut = function() {

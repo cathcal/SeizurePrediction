@@ -19,6 +19,7 @@ FriendlyChat.prototype.initFirebase = function() {
 
 FriendlyChat.prototype.signIn = function() {
     this.auth.signInWithEmailAndPassword(this.user_id.value, this.login_password.value);
+    this.auth.signOut();
 };
 
 // Signs-out of Friendly Chat.
