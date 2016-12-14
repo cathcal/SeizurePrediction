@@ -1,10 +1,10 @@
 # SeizurePrediction
 Readme.md
+
+
 Website: 
 Our website can be reached at https://seizureprediciton.firebaseapp.com, after goes to our website, you can create your own account. Please note that the password should be at least 8 characters long and also a combination of numbers and letters.
 After login, you will go to our main page. Explore everything there!
-
-
 MATLAB:
 
 Notes: 
