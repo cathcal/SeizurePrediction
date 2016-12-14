@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seizure Prediction | Flot Charts</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="../../css/Seizure_Prediction.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="skin-blue">
+        <header class="header">
+            <a href="../../main.html" class="logo">
+                Seizure Prediction
+            </a>
+            <!-- Header Navbar-->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages -->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <!-- inner menu  -->
+                                    <ul class="menu">
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image"/>
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>Are you happy today?</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Nurse 1
+                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                                </h4>
+                                                <p>Doctor, Patient1 wanted you to check him today</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Patient 2
+                                                    <small><i class="fa fa-clock-o"></i> Today</small>
+                                                </h4>
+                                                <p>I feel uncomfortable yesterday</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Nurse 1
+                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                                </h4>
+                                                <p>Patient601 didn't sleep last night.</p>
+                                            </a>
+                                        </li>                                    
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <!-- Notifications -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-warning"></i>
+                                <span class="label label-warning">5</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 5 notifications</li>
+                                <li>
+                                    <!-- inner menu -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-people info"></i> 1 new doctor joined today.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning danger"></i> You need to register the EEG lab this week.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users warning"></i> Osama fund us $300000
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-cart success"></i> You need to clean your mailbox.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-person danger"></i> You changed your username
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="label label-danger"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have no tasks</li>
+                                <li>
+                                    <!-- inner menu -->
+                                    <ul class="menu">
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    
+                                                </h3>                                                
+                                            </a>
+                                        </li><!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>Jane Doe <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <p>
+                                        Jane Doe - Doctore
+                                        <small>Member since Nov. 2016</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Department</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Journals</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Labs</a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p>Hello, Jane</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="../../main.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/tables/data.html">
+                                <i class="fa fa-table"></i> <span>Patient List</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/charts/flot.html">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span>EEG</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/calendar.html">
+                                <i class="fa fa-calendar"></i> <span>Calendar</span>
+                                <small class="badge pull-right bg-red">3</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/mailbox.html">
+                                <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                                <small class="badge pull-right bg-yellow">12</small>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        EEG Waveforms
+                        <small>Seizure or not</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Charts</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- interactive chart -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                    <h3 class="box-title">Realtime EEG</h3>
+                                    <div class="box-tools pull-right">
+                                        Real time
+                                        <div class="btn-group" id="realtime" data-toggle="btn-toggle">
+                                            <button type="button" class="btn btn-default btn-xs active" data-toggle="on">On</button>                                            
+                                            <button type="button" class="btn btn-default btn-xs" data-toggle="off">Off</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <div id="interactive" style="height: 800px;"></div>
+                                </div><!-- /.box-body-->
+                            </div><!-- /.box -->
+
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Line chart -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                    <h3 class="box-title">Static EEG 1</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="line-chart" style="height: 500px;"></div>
+                                </div><!-- /.box-body-->
+                            </div><!-- /.box -->
+
+                            <!-- Area chart -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                    <h3 class="box-title">Preictal Stage</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="bar-chart" style="height: 350px;" ></div>
+                                </div><!-- /.box-body-->
+                            </div><!-- /.box -->
+
+                        </div><!-- /.col -->
+
+                        <div class="col-md-6">
+                            <!-- Bar chart -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                    <h3 class="box-title">Static EEG 2</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="line-chart2" style="height: 500px;"></div>
+                                </div><!-- /.box-body-->
+                            </div><!-- /.box -->
+
+                            <!-- Donut chart -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                    <h3 class="box-title">Preictal%</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="donut-chart" style="height: 350px;"></div>
+                                </div><!-- /.box-body-->
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </section><!-- /.content -->
+
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCbyy1oWJk2U81daXdyuLhuaZOx4j1OY1w",
+    authDomain: "seizureprediciton.firebaseapp.com",
+    databaseURL: "https://seizureprediciton.firebaseio.com",
+    storageBucket: "seizureprediciton.appspot.com",
+    messagingSenderId: "1000511212889"
+  };
+  firebase.initializeApp(config);
+</script>
+        <!-- jQuery 2.0.2 -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+
+        <!-- FLOT CHARTS -->
+        <script src="../../js/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+        <script src="../../js/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+        <script src="../../js/plugins/flot/jquery.flot.pie.min.js" type="text/javascript"></script>
+        <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+        <script src="../../js/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="../../js/plugins/flot/jquery.flot.axislabels.js" type="text/javascript"></script>
+
+        <!-- Page script -->
+        <script type="text/javascript">
+
+            $(function() {
+
+                var data = [], totalPoints = 300;
+                var data1 = [], data2 = [], data3 = [], data4 = [], data5 = [], data6 = [], data7 = [], data8 = [], data9 = [], data10 = [], data11 = [], data12 = [], data13 = [], data14 = [], data15 = [];
+                function getRandomData() {
+
+                    if (data.length > 0)
+                        data = data.slice(1);
+
+                    while (data.length < totalPoints) {
+
+                        var prev = data.length > 0 ? data[data.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data.length; ++i) 
+                        res.push([i, data[i] + 4500]);
+
+                    return res;
+                }
+
+                function getRandomData1() {  
+                    if (data1.length > 0)  
+                        data1 = data1.slice(1);  
+                    while (data1.length < totalPoints) { 
+
+                        var prev = data1.length > 0 ? data1[data1.length - 1] : 0;
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+                        
+                        data1.push(y);  
+                    }  
+                    var res = [];  
+                    for (var i = 0; i < data1.length; ++i)  
+                        res.push([i, data1[i] + 3900])  
+                    
+                    return res;  
+                }  
+
+                function getRandomData2() {
+
+                    if (data2.length > 0)
+                        data2 = data2.slice(1);
+
+                    while (data2.length < totalPoints) {
+
+                        var prev = data2.length > 0 ? data2[data2.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data2.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data2.length; ++i) 
+                        res.push([i, data2[i] + 3300]);
+
+                    return res;
+                }
+
+                function getRandomData3() {
+
+                    if (data3.length > 0)
+                        data3 = data3.slice(1);
+
+                    while (data3.length < totalPoints) {
+
+                        var prev = data3.length > 0 ? data3[data3.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data3.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data3.length; ++i) 
+                        res.push([i, data3[i] + 2700]);
+
+                    return res;
+                }
+
+                function getRandomData4() {
+
+                    if (data4.length > 0)
+                        data4 = data4.slice(1);
+
+                    while (data4.length < totalPoints) {
+
+                        var prev = data4.length > 0 ? data4[data4.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data4.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data4.length; ++i) 
+                        res.push([i, data4[i]+ 2100]);
+
+                    return res;
+                }
+
+                function getRandomData5() {
+
+                    if (data5.length > 0)
+                        data5 = data5.slice(1);
+
+                    while (data5.length < totalPoints) {
+
+                        var prev = data5.length > 0 ? data5[data5.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data5.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data5.length; ++i) 
+                        res.push([i, data5[i] + 1500]);
+
+                    return res;
+                }
+
+                function getRandomData6() {
+
+                    if (data6.length > 0)
+                        data6 = data6.slice(1);
+
+                    while (data6.length < totalPoints) {
+
+                        var prev = data6.length > 0 ? data6[data6.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data6.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data6.length; ++i) 
+                        res.push([i, data6[i] + 900]);
+
+                    return res;
+                }
+
+                function getRandomData7() {
+
+                    if (data7.length > 0)
+                        data7 = data7.slice(1);
+
+                    while (data7.length < totalPoints) {
+
+                        var prev = data7.length > 0 ? data7[data7.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data7.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data7.length; ++i) 
+                        res.push([i, data7[i] + 300]);
+
+                    return res;
+                }
+
+                function getRandomData8() {
+
+                    if (data8.length > 0)
+                        data8 = data8.slice(1);
+
+                    while (data8.length < totalPoints) {
+
+                        var prev = data8.length > 0 ? data8[data8.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data8.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data8.length; ++i) 
+                        res.push([i, data8[i] - 300]);
+
+                    return res;
+                }
+
+                function getRandomData9() {
+
+                    if (data9.length > 0)
+                        data9 = data9.slice(1);
+
+                    while (data9.length < totalPoints) {
+
+                        var prev = data9.length > 0 ? data9[data9.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data9.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data9.length; ++i) 
+                        res.push([i, data9[i] - 900]);
+
+                    return res;
+                }
+
+                function getRandomData10() {
+
+                    if (data10.length > 0)
+                        data10 = data10.slice(1);
+
+                    while (data10.length < totalPoints) {
+
+                        var prev = data10.length > 0 ? data10[data10.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data10.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data10.length; ++i) 
+                        res.push([i, data10[i] - 1500]);
+
+                    return res;
+                }
+
+                function getRandomData11() {
+
+                    if (data11.length > 0)
+                        data11 = data11.slice(1);
+
+                    while (data11.length < totalPoints) {
+
+                        var prev = data11.length > 0 ? data11[data11.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data11.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data11.length; ++i) 
+                        res.push([i, data11[i] - 2100]);
+
+                    return res;
+                }
+
+                function getRandomData12() {
+
+                    if (data12.length > 0)
+                        data12 = data12.slice(1);
+
+                    while (data12.length < totalPoints) {
+
+                        var prev = data12.length > 0 ? data12[data12.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data12.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data12.length; ++i) 
+                        res.push([i, data12[i] - 2700]);
+
+                    return res;
+                }
+
+                function getRandomData13() {
+
+                    if (data13.length > 0)
+                        data13 = data13.slice(1);
+
+                    while (data13.length < totalPoints) {
+
+                        var prev = data13.length > 0 ? data13[data13.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data13.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data13.length; ++i) 
+                        res.push([i, data13[i] - 3300]);
+
+                    return res;
+                }
+
+                function getRandomData14() {
+
+                    if (data14.length > 0)
+                        data14 = data14.slice(1);
+
+                    while (data14.length < totalPoints) {
+
+                        var prev = data14.length > 0 ? data14[data14.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data14.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data14.length; ++i) 
+                        res.push([i, data14[i] - 3900]);
+
+                    return res;
+                }
+
+                function getRandomData15() {
+
+                    if (data15.length > 0)
+                        data15 = data15.slice(1);
+
+                    while (data15.length < totalPoints) {
+
+                        var prev = data15.length > 0 ? data15[data15.length - 1] : 0;
+
+                        var y = (Math.random() - 0.5) * 600 ;
+
+                        if (y < -300) 
+                            y = -300;
+                        if (y > 300) 
+                            y = 300;
+
+                        data15.push(y);
+                    }
+
+                    var res = [];
+                    for (var i = 0; i < data15.length; ++i) 
+                        res.push([i, data15[i] - 4500]);
+
+                    return res;
+                }
+
+
+                var updateInterval = 100; 
+
+                var options = {
+                    series: {
+                        shadowSize: 0,
+                        lines:{lineWidth:0.5}
+                    },  
+                    yaxis: {
+                        show: false 
+                    }, 
+                    xaxis: { 
+                        show: false 
+                    }   
+                };  
+
+                var dataset = [
+                { label: "Channel1", data:  getRandomData() , color: "#00FFF" },
+                { label: "Channel2", data:  getRandomData1() , color: "#00FFF" },
+                { label: "Channel3", data:  getRandomData2() , color: "#00FFF" },
+                { label: "Channel4", data:  getRandomData3() , color: "#00FFF" },
+                { label: "Channel5", data:  getRandomData4() , color: "#00FFF" },
+                { label: "Channel6", data:  getRandomData5() , color: "#00FFF" },
+                { label: "Channel7", data:  getRandomData6() , color: "#00FFF" },
+                { label: "Channel8", data:  getRandomData7() , color: "#00FFF" },
+                { label: "Channel9", data:  getRandomData8() , color: "#00FFF" },
+                { label: "Channel10", data:  getRandomData9() , color: "#00FFF" },
+                { label: "Channel11", data:  getRandomData10() , color: "#00FFF" },
+                { label: "Channel12", data:  getRandomData11() , color: "#00FFF" },
+                { label: "Channel13", data:  getRandomData12() , color: "#00FFF" },
+                { label: "Channel14", data:  getRandomData13() , color: "#00FFF" },
+                { label: "Channel15", data:  getRandomData14() , color: "#00FFF" },
+                { label: "Channel16", data:  getRandomData15() , color: "#00FFF" }
+                ];
+
+
+                var interactive_plot = $.plot($("#interactive"), dataset, options);  
+
+                function update() {   
+                    dataset = [
+                { label: "Channel1", data:  getRandomData() , color: "#00FFF" },
+                { label: "Channel2", data:  getRandomData1() , color: "#00FFF" },
+                { label: "Channel3", data:  getRandomData2() , color: "#00FFF" },
+                { label: "Channel4", data:  getRandomData3() , color: "#00FFF" },
+                { label: "Channel5", data:  getRandomData4() , color: "#00FFF" },
+                { label: "Channel6", data:  getRandomData5() , color: "#00FFF" },
+                { label: "Channel7", data:  getRandomData6() , color: "#00FFF" },
+                { label: "Channel8", data:  getRandomData7() , color: "#00FFF" },
+                { label: "Channel9", data:  getRandomData8() , color: "#00FFF" },
+                { label: "Channel10", data:  getRandomData9() , color: "#00FFF" },
+                { label: "Channel11", data:  getRandomData10() , color: "#00FFF" },
+                { label: "Channel12", data:  getRandomData11() , color: "#00FFF" },
+                { label: "Channel13", data:  getRandomData12() , color: "#00FFF" },
+                { label: "Channel14", data:  getRandomData13() , color: "#00FFF" },
+                { label: "Channel15", data:  getRandomData14() , color: "#00FFF" },
+                { label: "Channel16", data:  getRandomData15() , color: "#00FFF" }
+                ];
+
+                    interactive_plot.setData(dataset);
+
+                    interactive_plot.draw();  
+
+                    setTimeout(update, updateInterval);  
+                }  
+                update();
+                /*
+                 * END INTERACTIVE CHART
+                 */               
+
+                /*
+                 * Line CHART
+                 * ----------
+                 */
+                var options1 = {
+                    series: {
+                        shadowSize: 0,
+                        lines:{lineWidth:0.5}
+                    },  
+                    yaxis: {
+                        show: false 
+                    }, 
+                    xaxis: { 
+                        show: false 
+                    }   
+                };  
+
+                var dataset1 = [
+                { label: "Channel1", data:  getRandomData() , color: "#00FFF" },
+                { label: "Channel2", data:  getRandomData1() , color: "#00FFF" },
+                { label: "Channel3", data:  getRandomData2() , color: "#00FFF" },
+                { label: "Channel4", data:  getRandomData3() , color: "#00FFF" },
+                { label: "Channel5", data:  getRandomData4() , color: "#00FFF" },
+                { label: "Channel6", data:  getRandomData5() , color: "#00FFF" },
+                { label: "Channel7", data:  getRandomData6() , color: "#00FFF" },
+                { label: "Channel8", data:  getRandomData7() , color: "#00FFF" },
+                { label: "Channel9", data:  getRandomData8() , color: "#00FFF" },
+                { label: "Channel10", data:  getRandomData9() , color: "#00FFF" },
+                { label: "Channel11", data:  getRandomData10() , color: "#00FFF" },
+                { label: "Channel12", data:  getRandomData11() , color: "#00FFF" },
+                { label: "Channel13", data:  getRandomData12() , color: "#00FFF" },
+                { label: "Channel14", data:  getRandomData13() , color: "#00FFF" },
+                { label: "Channel15", data:  getRandomData14() , color: "#00FFF" },
+                { label: "Channel16", data:  getRandomData15() , color: "#00FFF" }
+                ];
+
+
+                var EEG1_plot = $.plot($("#line-chart"), dataset1, options1);
+                /*
+                 * FULL WIDTH STATIC AREA CHART   
+                 * -----------------               
+                 */
+                var options2 = {
+                    series: {
+                        shadowSize: 0,
+                        lines:{lineWidth:0.5}
+                    },  
+                    yaxis: {
+                        show: false 
+                    }, 
+                    xaxis: { 
+                        show: false 
+                    }   
+                };  
+
+                var dataset2 = [
+                { label: "Channel1", data:  getRandomData() , color: "#00FFF" },
+                { label: "Channel2", data:  getRandomData1() , color: "#00FFF" },
+                { label: "Channel3", data:  getRandomData2() , color: "#00FFF" },
+                { label: "Channel4", data:  getRandomData3() , color: "#00FFF" },
+                { label: "Channel5", data:  getRandomData4() , color: "#00FFF" },
+                { label: "Channel6", data:  getRandomData5() , color: "#00FFF" },
+                { label: "Channel7", data:  getRandomData6() , color: "#00FFF" },
+                { label: "Channel8", data:  getRandomData7() , color: "#00FFF" },
+                { label: "Channel9", data:  getRandomData8() , color: "#00FFF" },
+                { label: "Channel10", data:  getRandomData9() , color: "#00FFF" },
+                { label: "Channel11", data:  getRandomData10() , color: "#00FFF" },
+                { label: "Channel12", data:  getRandomData11() , color: "#00FFF" },
+                { label: "Channel13", data:  getRandomData12() , color: "#00FFF" },
+                { label: "Channel14", data:  getRandomData13() , color: "#00FFF" },
+                { label: "Channel15", data:  getRandomData14() , color: "#00FFF" },
+                { label: "Channel16", data:  getRandomData15() , color: "#00FFF" }
+                ];
+
+
+                var EEG1_plot = $.plot($("#line-chart2"), dataset2, options2);
+
+                /* END AREA CHART */
+
+                /*
+                 * BAR CHART
+                 * ---------                 
+                 */
+   var dict = [];
+   var ref = firebase.database().ref("Pt1/-KYkdZMy1cvtqwRz21_X");
+    ref.once("value").then(function(snapshot) {
+    var data = snapshot.val();
+    var fLen, i;
+    fLen = data.length;
+    for (i = 0; i < fLen; i++) {
+    var temp = [];
+    temp = [ i,data[i] ];
+    dict.push(temp);
+}
+                var bar_data = {
+                    data: dict,
+                    color: "#3c8dbc"
+                };
+                $.plot("#bar-chart", [bar_data], {
+                    grid: {
+                        borderWidth: 1,
+                        borderColor: "#f3f3f3",
+                        tickColor: "#f3f3f3"
+                    },
+                    series: {
+                        bars: {
+                            show: true,
+                            barWidth: 0.005,
+                            align: "center"
+                        }
+                    },
+                    xaxis: {
+                        tickLength: 0
+                    },
+                    yaxis: {
+                        min: 0,
+                        max: 1,
+                        show: false
+                    }
+                });
+});
+
+                /* END BAR CHART */
+
+                /*
+                 * DONUT CHART
+                 * -----------
+                 */
+
+                var donutData = [
+                    {label: "Preictal", data: 12.17, color: "#3c8dbc"},
+                    {label: "others", data: 87.83, color: "#0073b7"}
+                ];
+                $.plot("#donut-chart", donutData, {
+                    series: {
+                        pie: {
+                            show: true,
+                            radius: 1,
+                            innerRadius: 0.5,
+                            label: {
+                                show: true,
+                                radius: 2 / 3,
+                                formatter: labelFormatter,
+                                threshold: 0.1
+                            }
+
+                        }
+                    },
+                    legend: {
+                        show: false
+                    }
+                });
+                /*
+                 * END DONUT CHART
+                 */
+
+            });
+            /*
+             * Custom Label formatter
+             * ----------------------
+             */
+            function labelFormatter(label, series) {
+                return "<div style='font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;'>"
+                        + label
+                        + "<br/>"
+                        + Math.round(series.percent) + "%</div>";
+            }
+
+        </script>
+    </body>
+</html>

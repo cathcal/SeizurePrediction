@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seizure Prediction</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- DATA TABLES -->
+        <link href="../../css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="../../css/Seizure_Prediction.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="skin-blue">
+        <header class="header">
+            <a href="../../main.html" class="logo">
+                Seizure Prediction
+            </a>
+            <!-- Header Navbar-->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages -->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <!-- inner menu  -->
+                                    <ul class="menu">
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image"/>
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>Are you happy today?</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Nurse 1
+                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                                </h4>
+                                                <p>Doctor, Patient1 wanted you to check him today</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Patient 2
+                                                    <small><i class="fa fa-clock-o"></i> Today</small>
+                                                </h4>
+                                                <p>I feel uncomfortable yesterday</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Nurse 1
+                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                                </h4>
+                                                <p>Patient601 didn't sleep last night.</p>
+                                            </a>
+                                        </li>                                    
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-warning"></i>
+                                <span class="label label-warning">5</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 5 notifications</li>
+                                <li>
+                                    <!-- inner menu -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-people info"></i> 1 new doctor joined today.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning danger"></i> You need to register the EEG lab this week.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users warning"></i> Osama fund us $300000
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-cart success"></i> You need to clean your mailbox.
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ion ion-ios7-person danger"></i> You changed your username
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- Tasks -->
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="label label-danger"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have no tasks</li>
+                                <li>
+                                    <!-- inner menu -->
+                                    <ul class="menu">
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    
+                                                </h3>                                                
+                                            </a>
+                                        </li><!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User Account -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>Jane Doe <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <p>
+                                        Jane Doe - Doctore
+                                        <small>Member since Nov. 2016</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Department</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Journals</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Labs</a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p>Hello, Jane</p>
+
+                            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <!-- search form -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- /.search form -->
+                    <!-- sidebar menu -->
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="../../main.html">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/tables/data.html">
+                                <i class="fa fa-table"></i> <span>Patient List</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/charts/flot.html">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span>EEG</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/calendar.html">
+                                <i class="fa fa-calendar"></i> <span>Calendar</span>
+                                <small class="badge pull-right bg-red">3</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/mailbox.html">
+                                <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                                <small class="badge pull-right bg-yellow">12</small>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">                
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Data Tables
+                        <small>advanced tables</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="#">Patient List</a></li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">Patient List</h3>                                    
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>Last Check</th>
+                                                <th>Gender</th>
+                                                <th>Date of Birth</th>
+                                                <th>Contact</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="">NS1379666SE</a></td>
+                                                <td>James Smith</td>
+                                                <td>Potential Seizure</td>
+                                                <td>19:23 14/11/16</td>
+                                                <td>Male</td>
+                                                <td>13/05/1978</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1376686KE</a></td>
+                                                <td>Jone Murphy</td>
+                                                <td>Potential Seizure</td>
+                                                <td>06:38 19/11/16</td>
+                                                <td>Male</td>
+                                                <td>25/11/1992</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1350298HG</a></td>
+                                                <td>Robert Lam</td>
+                                                <td>Potential Seizure</td>
+                                                <td>09:56 17/11/16</td>
+                                                <td>Male</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1890707DB</a></td>
+                                                <td>Mingjue Li</td>
+                                                <td>Clear</td>
+                                                <td>16:21 01/12/16</td>
+                                                <td>Female</td>
+                                                <td>02/10/1992</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1330678UE</a></td>
+                                                <td>Emma Martin</td>
+                                                <td>Clear</td>
+                                                <td>13:30 19/11/16</td>
+                                                <td>Female</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1327843YT</a></td>
+                                                <td>Ava Brown</td>
+                                                <td>Clear</td>
+                                                <td>07:12 02/12/16</td>
+                                                <td>Female</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS0138976ML</a></td>
+                                                <td>Emily Tremblay</td>
+                                                <td>Clear</td>
+                                                <td>15:21 03/12/16</td>
+                                                <td>Female</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS7389666GE</a></td>
+                                                <td>Mary Lee</td>
+                                                <td>Clear</td>
+                                                <td>08:11 08/11/16</td>
+                                                <td>Female</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="">NS1339666DE</a></td>
+                                                <td>Songyan Hou</td>
+                                                <td>Clear</td>
+                                                <td>15:49 25/11/16</td>
+                                                <td>Female</td>
+                                                <td>13/08/1986</td>
+                                                <td>1-xxx-xxx-xxx</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>Last Check</th>
+                                                <th>Gender</th>
+                                                <th>Date of Birth</th>
+                                                <th>Contact</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div>
+                    </div>
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCbyy1oWJk2U81daXdyuLhuaZOx4j1OY1w",
+    authDomain: "seizureprediciton.firebaseapp.com",
+    databaseURL: "https://seizureprediciton.firebaseio.com",
+    storageBucket: "seizureprediciton.appspot.com",
+    messagingSenderId: "1000511212889"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="../js/database.js"></script>
+        <!-- jQuery 2.0.2 -->
+        <script src="../js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- DATA TABES SCRIPT -->
+        <script src="../../js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="../../js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+
+        <!-- page script -->
+        <script type="text/javascript">
+            $(function() {
+                $("#example1").dataTable();
+                $('#example2').dataTable({
+                    "bPaginate": true,
+                    "bLengthChange": false,
+                    "bFilter": false,
+                    "bSort": true,
+                    "bInfo": true,
+                    "bAutoWidth": false
+                });
+            });
+        </script>
+
+    </body>
+</html>
