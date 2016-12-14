@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign Up</title>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--Google Fonts-->
+<!--Google Fonts-->
+</head>
+<body>
+<div class="login">
+	<h2>Seizure Prediction</h2>
+	<div class="login-top">
+		<h1>SIGNUP FORM</h1>
+		<form action="" method="post" name="form">
+			<input id="reg_docID" type="text" value="Doctor Id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Doctor Id';}">
+			<input id="reg_name" type="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+			<input id="reg_email" type="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
+			<input id="reg_password" type="text" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+			<input id="reg_re_password" type="text" value="Re-enter Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Re-enter Password';}">
+	    	
+	    <div class="forgot">
+	    	<button id="reg_submit" type="submit" value="Submit" style="background: #10c6ef; color: #FFF;font-size: 17px;
+  font-weight: 400;padding: 8px 7px;width: 20%;display: inline-block;cursor: pointer;border-radius: 6px;-webkit-border-radius: 19px;-moz-border-radius: 6px;-o-border-radius: 6px;margin: 0px 7px 0px 3px;outline: none;border: none;" onclick=window.location.href="http://www.baidu.com";>submit</button>
+	    </div>
+	</form>
+	</div>
+</div>	
+<div class="copyright">
+	<p></p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCbyy1oWJk2U81daXdyuLhuaZOx4j1OY1w",
+    authDomain: "seizureprediciton.firebaseapp.com",
+    databaseURL: "https://seizureprediciton.firebaseio.com",
+    storageBucket: "seizureprediciton.appspot.com",
+    messagingSenderId: "1000511212889"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
