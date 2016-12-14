@@ -4,7 +4,13 @@ Readme.md
 
 Website: 
 Our website can be reached at https://seizureprediciton.firebaseapp.com, after goes to our website, you can create your own account. Please note that the password should be at least 8 characters long and also a combination of numbers and letters.
-After login, you will go to our main page. Explore everything there! All the files for website are in the folder "public".
+After login, you will go to our main page. Explore everything there! All the files for website are in the folder "public". You can view our CSS, HTML and javascript code in this folder.
+
+Notes: 
+
+1) You can see our login, signup, and main page in folder "pubic", their javascrip is in public/js/AdminLTE folder.
+2) EEG chart page, mailbox page, calendar page is in folder "Pages". Their JS is in the bottom of these pages and also public/pages/js folder.
+
 
 MATLAB:
 
