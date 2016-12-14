@@ -9,6 +9,7 @@ After login, you will go to our main page. Explore everything there! All the fil
 Notes: 
 
 1) You can see our login, signup, and main page in folder "pubic", their javascrip is in public/js/AdminLTE folder.
+
 2) EEG chart page, mailbox page, calendar page is in folder "Pages". Their JS is in the bottom of these pages and also public/pages/js folder.
 
 
