@@ -8,7 +8,7 @@ After login, you will go to our main page. Explore everything there! All the fil
 
 Notes: 
 
-1) You can see our login, signup, and main page in folder "pubic", their javascrip is in public/js/AdminLTE folder.
+1) You can see our login, signup, and main page in folder "public", their javascrip is in public/js/AdminLTE folder.
 
 2) EEG chart page, mailbox page, calendar page is in folder "Pages". Their JS is in the bottom of these pages and also public/pages/js folder.
 
@@ -17,11 +17,12 @@ MATLAB:
 
 Notes: 
 
-- The Wavelet Toolbox and the Statistics and Machine Learning Toolbox are needed in order to run this program
+- The "Wavelet Toolbox" and the "Statistics and Machine Learning Toolbox" are needed in order to run this program
 
 - The program was not designed to check errors for incorrect user inputs. If an invalid value is typed in, the program will fail and exit
 
 1) Download the data from: https://www.kaggle.com/c/melbourne-university-seizure-prediction/data
+  For a quick test, download train_1.zip and test_1_new.zip
 2) Load the data, EEG_SVM.m, eeg_read_svm.m, feature_matrix.m into the current path for MATLAB
 3) Run EEG_SVM:
   A) Type the patient number (1, 2 or 3)
